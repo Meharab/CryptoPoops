@@ -1,0 +1,39 @@
+{
+	"contracts": {
+		"NFT": "./contracts/CryptoPoops.cdc",
+		"NonFungibleToken": {
+			"source": "./contracts/NonFungibleToken.cdc",
+			"aliases": {
+				"testnet": "0x631e88ae7f1d7c20"
+		    }
+		}
+	},
+	"networks": {
+		"emulator": "127.0.0.1:3569",
+		"mainnet": "access.mainnet.nodes.onflow.org:9000",
+		"testnet": "access.devnet.nodes.onflow.org:9000"
+	},
+	"accounts": {
+		"emulator-account": {
+			"address": "f8d6e0586b0a20c7",
+			"key": "a435807d3f0a6456f9c43aa56851700b88759c35b2730c832c40cfcf0c62bdbf"
+		},
+		"testnet-account": {
+			"address": "19f575dd87231115",
+			"key": {
+			    "type": "hex",
+			    "index": 0,
+			    "signatureAlgorithm": "ECDSA_P256",
+			    "hashAlgorithm": "SHA3_256",
+			    "privateKey": "e5f91365226f1392209b757bafd2bc8a33996f7417e512b3e0f26118f7e1a4f5"
+			}
+		  }
+	},
+	"deployments": {
+		"testnet": {
+			"testnet-account": [
+				"CryptoPoops"
+			]
+		}	
+	}
+}
